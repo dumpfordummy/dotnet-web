@@ -57,7 +57,7 @@ namespace SportsStore.Tests
                 new TagHelperAttributeList(),
                 (cache, encoder) => Task.FromResult(content.Object));
 
-            // Act
+            // Action
             helper.Process(ctx, output);
 
             // Assert
