@@ -21,7 +21,7 @@ namespace SportsStore.Controllers
         /// <returns></returns>
         public ViewResult Index(string? category, int productPage = 1)
         {
-            return View(new ProductListViewModel
+            return View(new ProductsListViewModel
             {
                 Products = _repository.Products
                     .Where(p => category == null || p.Category == category)
